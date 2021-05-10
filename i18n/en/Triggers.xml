@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Triggers>
+    <Hold> Przytrzymaj przez {0} godz. </Hold>
+    <HoldSingle> Przytrzymaj przez 1 godzinę. </HoldSingle>
+    <FailAfter> Niepowodzenie po {0} godzinach. </FailAfter>
+    <FailAfterSingle> Niepowodzenie po 1 godzinie. </FailAfterSingle>
+    <Completed> Ukończono! </Completed>
+    <Failed> Niepowodzenie! </Failed>
+    <Objectives>
+        <Cash> Masz saldo gotówkowe w wysokości {0} (bez pożyczek). </Cash>
+        <CashEditor> Masz saldo gotówki w wysokości ... </CashEditor>
+        <Gates> Miej {0} bramki dla samolotów. </Gates>
+        <GatesEditor> Posiadaj kilka bramek lotniczych. </GatesEditor>
+        <Runways> Mają {0} pasy startowe. </Runways>
+        <RunwaysEditor> Miej kilka pasów startowych. </RunwaysEditor>
+        <Satisfaction> Uzyskaj {0}% ogólnego zadowolenia pasażerów. </Satisfaction>
+        <SatisfactionEditor> Mieć procent ogólnej satysfakcji pasażerów. </SatisfactionEditor>
+        <PaxCount> Miej {0} pasażerów jednocześnie na swoim lotnisku. </PaxCount>
+        <PaxCountEditor> Miej wielu pasażerów na swoim lotnisku jednocześnie. </PaxCountEditor>
+        <NoDebts> Masz nie więcej niż {0} długów pożyczkowych. </NoDebts>
+        <NoDebtsEditor> Masz długi kredytowe nie większe niż ... </NoDebtsEditor>
+        <PlaneCount> Obsługuj łącznie {0} samolotów. </PlaneCount>
+        <PlaneCountEditor> Obsługuj łącznie kilka samolotów. </PlaneCountEditor>
+        <HireStaff> Miej łącznie {0} pracowników. </HireStaff>
+        <HireStaffEditor> Mieć całkowitą liczbę pracowników. </HireStaffEditor>
+        <Refuel> Tankuj samoloty łącznie {0} litrami. </Refuel>
+        <RefuelEditor> Tankuj samoloty z całkowitą ilością litrów paliwa. </RefuelEditor>
+    </Objectives>
+    <Rewards>
+        <NoReward> Brak nagrody </NoReward>
+        <Unlock> Odblokuj </Unlock>
+    </Rewards>
+    <LoseConditions>
+        <Satisfaction> Poziom zadowolenia pasażerów nie spadł poniżej {0}. </Satisfaction>
+        <SatisfactionEditor> Poziom zadowolenia pasażerów poniżej ... </SatisfactionEditor>
+        <Time> Wykonaj wszystkie cele przed dniem {0}. </Time>
+        <TimeEditor> Wykonaj wszystkie cele przed określonym dniem. </TimeEditor>
+        <Cancelled> Nie masz więcej niż {0} odwołanych lotów. </Cancelled>
+        <CancelledEditor> Nie miej anulowanych więcej niż liczby lotów. </CancelledEditor>
+        <Delayed> Nie miej więcej niż {0} opóźnienia lotów. </Delayed>
+        <DelayedEditor> Nie spóźnij się więcej niż kilka lotów. </DelayedEditor>
+        <PaxMissed> Nie pozwól, aby więcej niż {0} pasażerów spóźniło się na loty. </PaxMissed>
+        <PaxMissedEditor> Nie pozwól, aby zbyt wielu pasażerów spóźniło się na loty. </PaxMissedEditor>
+    </LoseConditions>
+    <Consequences>
+        <LoseGame> Strata poziomu. </LoseGame>
+        <Fined> Sfinalizowane </Fined>
+    </Consequences>
+</Triggers>

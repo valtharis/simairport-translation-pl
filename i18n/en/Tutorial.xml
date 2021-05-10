@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tutorial>
+    <Titles>
+        <EasyTutorial1>Podstawy SimAirport</EasyTutorial1>
+        <Expansion>Duza rozbudowa lotniska</Expansion>
+        <Baggage>Systemy bagazowe</Baggage>
+        <FuelPA>Systemy PA i paliwo</FuelPA>
+        <Scheduling>Planowanie pracownikow</Scheduling>
+        <FoodStores>Jedzenie i zakupy</FoodStores>
+        <NeedsNegotiate>Potrzeby linii lotniczych i negocjacje</NeedsNegotiate>
+    </Titles>
+    <Default>Pomocne obrazy beda pojawiac sie tutaj w calym samouczku.</Default>
+    <EndTutorial>Zakoncz</EndTutorial>
+    <NextButton>Dalej</NextButton>
+    <SkipObjective>Pomin</SkipObjective>
+    <EasyTutorial1>
+        <IntroductionTitle>Witamy w SimAirport!</IntroductionTitle>
+        <Introduction>To jest pierwszy z latwych samouczkow. Pomocne obrazy beda dostepne przez caly czas, klikajac niebieska ikone informacyjna ze strzalka.
+
+To lotnisko jest brama Learnyville na swiat. Jego maly terminal ma podstawy: transport, sprzedaz biletow, ochrone, sale odlotow, (zepsuta) brame samolotu i odbior bagazu.
+
+Problem w tym, ze nigdy nie skonczyli go budowac!</Introduction>
+        <CameraMovement>Uzyj WASD, klawiszy strzalek lub przesun kursor do krawedzi ekranu, aby przesunac kamere. Mozesz nawet przytrzymac srodkowy przycisk myszy i przesunac kursor.
+
+Na ekranie opcji mozesz dostosowac szybkosc poruszania kamera przez te elementy sterujace.
+
+Mozesz takze zmienic klawisze, ktore wykonuja polecenia.</CameraMovement>
+        <TutorialWindow>Mozesz przesunac okno samouczka, przytrzymujac lewy przycisk myszy i przeciagajac je w nowe miejsce.
+        
+Wiekszosc okien mozna przeciagac, a wiekszosc z nich pozwala takze zamknac je przyciskiem X. To okno mozna zminimalizowac / zmaksymalizowac, jesli potrzebujesz, aby zajmowalo mniej miejsca.</TutorialWindow>
+        <TutorialWindowObjective>Przeciagnij okno dookola!</TutorialWindowObjective>
+        <UserInterface>Ta zlozona symulacja moze byc latwa do zrozumienia, jesli poswieci sie kilka chwil na rozejrzenie sie po interfejsie uzytkownika.
+
+Masz ogolne statystyki u gory, kontrolki czasu w prawym gornym rogu, rozne operacje lotniskowe w lewym dolnym rogu i wybor map popularnosci po prawej.
+
+Nacisnij klawisz Escape, aby zamknac dowolne gorne okno (nie bedzie to dzialac w oknie samouczka).</UserInterface>
+        <ConstructIntroTitle>Podstawy konstrukcji</ConstructIntroTitle>
+        <ConstructIntro>Jednym z najwazniejszych aspektow SimAirport jest budowa.
+
+Obiekty i konstrukcje musza byc budowane przez robotnikow. Wszystkie pomieszczenia wewnetrzne musza byc zbudowane na fundamentach, a po ukonczeniu mozna tam umiescic wszelkie elementy wewnetrzne. </ConstructIntro>
+         <Hire4Workmen> Kiedy wyznaczasz obszar budowy, materialy budowlane sa automatycznie porzadkowane.
+
+Materialy sa dostarczane ciezarowkami wzdluz glownej drogi, do strefy dostaw (poludniowy zachod). Materialy sa nastepnie zbierane przez pracownikow i rozmieszczane na lotnisku. Wszelkie materialy zapasowe, np. Z anulowanych projektow, sa skladowane.</Hire4Workmen>
+        <Hire4WorkmenObjective>Zatrudnij co najmniej 6 pracownikow (lacznie) dostepnych w centrum obslugi (KeyboardFunctions.StaffHub).</Hire4WorkmenObjective>
+        <DragFoundation>Z menu Buduj wybierz Konstrukcja, a nastepnie Fundament. Nie wiesz, co to jest narzedzie lub obiekt? Mozesz najechac na niego kursorem, aby zobaczyc opis.
+        
+Bedziesz musial poczekac, az robotnicy go zbuduja, ale mozesz przyspieszyc czas za pomoca elementow sterujacych w prawym gornym rogu ekranu lub naciskajac 1/2/3, aby uzyskac predkosc i SPACJe, aby wstrzymac.</DragFoundation>
+        <DragFoundationObjective>Przeciagnij fundament po pasiastym obszarze obok hali odlotow. Popelnil blad? Kliknij projekt lewym przyciskiem myszy, aby anulowac, zanim rozpoczna sie Robotnicy.</DragFoundationObjective>
+        <BuildingMistakes>Projekt mozna nie tylko anulowac podczas budowy, klikajac lewym przyciskiem myszy, ale takze usunac fundamenty za pomoca narzedzia Demolish (KeyboardFunctions.DemolishTool).
+
+Lub, jesli przypadkowo zgubiles jakies obiekty, uzyj narzedzia Wyczysc (KeyboardFunctions.ClearTool). Nie wiesz, ktorego narzedzia uzyc? Nacisnij klawisze KeyboardFunctions.BuildModifier, aby automatycznie wykryc narzedzie do usuwania.
+
+Mozesz rowniez zwiekszyc lub zmniejszyc priorytet pracownikow w projekcie w menu po kliknieciu lewym przyciskiem myszy!</BuildingMistakes>
+        <GuestNeedsTitle>Potrzeby pasazerow i podzial na strefy</GuestNeedsTitle>
+        <GuestNeeds>Pasazerowie maja rozne potrzeby, takie jak glod, pecherz i nuda. Nasze lotnisko zajmuje sie obecnie potrzebami dotyczacymi pecherza w toaletach.
+
+Zajecie sie nimi podniesie poziom zadowolenia naszych pasazerow, co zwiekszy nasze szanse na uzyskanie lepszych kontraktow lotniczych.</GuestNeeds>
+        <Boredom>Salon gier powinien pomoc naszym pasazerom mniej sie nudzic. Aby to zrobic, musimy wyznaczyc dla niego obszar.
+
+Strefy wyznaczaja obszary, w ktorych pasazerowie i personel moga korzystac z okreslonych udogodnien i obiektow. Mozesz przelaczac wizualizacje stref za pomoca KeyboardFunctions.ZoneToggle.</Boredom>
+        <BoredomObjective>Znajdz panel Strefy i wypelnij nowy obszar strefa Arcade. Mozesz strefowac nad czesciowo lub w pelni zbudowanymi obiektami.</BoredomObjective>
+        <ProblemArcadeTitle>Jak rozwiazywac problemy</ProblemArcadeTitle>
+        <ProblemArcade>Za kazdym razem, gdy w pokoju wystapi problem, zmieni kolor na czerwony. Najedz na niego, aby zobaczyc, czego potrzebuje. Wiekszosc problemow to albo zly rozmiar, albo brakujace obiekty.
+
+Nacisnij klawisze KeyboardFunctions.RotateObject lub kliknij srodkowym przyciskiem myszy, aby obrocic obiekt. Kliknij prawym przyciskiem myszy umieszczony obiekt, aby go anulowac lub usunac.</ProblemArcade>
+        <ProblemArcadeObjective>Napraw problemy z Arcade, dopoki nie bedzie dzialac!</ProblemArcadeObjective>
+        <EnvironmentTitle>Ulepszenia lotniska i mapy termiczne</EnvironmentTitle>
+        <Environment>Lotniska moga byc frustrujace dla pasazerow. Czasami potrzebna jest skromna roslina, aby ich rozweselic!
+
+Scenerie mozna znalezc w menu budowy, w sekcji Obiekty i dekoracje. Mozesz takze zmienic wyglad podlogi!
+
+Mozesz skorzystac z mapy cieplnej srodowiska, aby zobaczyc najbardziej atrakcyjne obszary lotniska.</Environment>
+        <Decorate>Inne mapy popularnosci rowniez sa przydatne.
+
+Mapa popularnosci informacji pokazuje, gdzie pasazerowie moga uzyskac najnowsze informacje o swoich lotach.
+
+Umiesc wyswietlacze informacyjne i kioski, aby pomoc pasazerom sledzic, w przeciwnym razie moga przegapic swoje loty.</Decorate>
+        <PlaneStandsTitle>Naprawianie uszkodzonej podstawy samolotu!</PlaneStandsTitle>
+        <PlaneStands>Nie mamy zadnych samolotow! Aby zdobyc samoloty, potrzebujemy najpierw dzialajacego stanowiska samolotu, podlaczonego do drogi kolowania i przypisanego do Gate Agent Desk.
+
+Wskazowka: w menu budowania mozesz wyszukiwac „Brama” lub „Droga kolowania”, aby szybko je znalezc. Po zbudowaniu kliknij stojak lub biurko, aby przypisac je sobie nawzajem.</PlaneStands>
+        <PlaneStandsObjective>Najedz kursorem na brame, aby zobaczyc, co jest nie tak lub czego brakuje, a nastepnie napraw problemy.</PlaneStandsObjective>
+        <QueuesTitle>Kolejki do bramek</QueuesTitle>
+        <Queues> Aby poprawic wydajnosc, wszystkie biurka pokladowe powinny miec kolejki.
+
+Kliknij Build, nastepnie Queues i przeciagnij nowa kolejke blisko pulpitu agenta bramki (patrz przyklad rozowy obszar). Nastepnie kliknij pulpit agenta bramy, aby przypisac kolejke.
+
+Przy kasach biletowych i stanowiskach ochrony moga byc rowniez kolejki. </Queues>
+        <QueuesObjective> Zbuduj i przypisz kolejke do stanowiska agenta bramki. </QueuesObjective>
+        <FlightStatusTitle> Lotniska samolotow! </FlightStatusTitle>
+        <FlightStatus> Teraz, gdy mamy dzialajace stanowisko dla samolotow, potrzebujemy samolotow, aby przyciagnac nowych pasazerow odlatujacych i wyladowac przylatujacych.
+
+Na ekranie statusu lotu (KeyboardFunctions.FlightStatus) zobaczysz, ze obecnie nie ma zadnych samolotow! </FlightStatus>
+        <FlightManage> Otworz zarzadzanie lotami (KeyboardFunctions.FlightSchedule), w ktorym zobaczysz dostepne kontrakty linii lotniczych z codziennymi lotami. Mozemy obslugiwac tylko male samoloty rano, ktore mozna filtrowac u gory.
+
+Aby otrzymac loty PM, musisz kliknac swoj pas startowy i dodac swiatla w menu uaktualnien! </FlightManage>
+        <FlightManageObjective> Zaakceptuj i zaplanuj dwa dostepne loty. </FlightManageObjective>
+        <RunwayLength> Mozesz uzyskac wieksze samoloty, budujac wieksze stojaki na samoloty i ulepszajac dlugosc swoich pasow startowych. Nie musisz tego robic wczesnie, poniewaz male samoloty moga korzystac z malych pasow startowych.
+
+Kiedy bedziesz gotowy, po prostu uzyj narzedzia pasa startowego (w zaleznosci od betonu lub asfaltu) na istniejacym pasie startowym i przeciagnij go, aby go przedluzyc. </RunwayLength>
+        <PlaneLands> Samoloty zwykle przylatuja nastepnego dnia po tym, jak zostaly po raz pierwszy przydzielone, wiec dzisiaj mozesz ich nie zobaczyc.
+
+To od Ciebie zalezy, jak najlepiej zrownowazyc swoj harmonogram. Zbyt zatloczone, a Twoje lotnisko moze stac sie chaotyczne i stracic satysfakcje. Za cicho, a lotnisko moze nie byc oplacalne. </PlaneLands>
+        <UsefulUITitle> Wazna informacja </UsefulUITitle>
+        <UsefulUI>
+            
+Rowniez u gory ekranu mozesz najechac kursorem na zainteresowanie liniami lotniczymi i zadowolenie pasazerow, aby uzyskac szczegolowe informacje. Klikniecie ich daje wiecej opcji.
+
+Te dwa ekrany pomoga Ci okreslic, w jaki sposob musisz ulepszyc swoje lotnisko dla przyszlych linii lotniczych i pasazerow. </UsefulUI>
+        <WeatherAndUpgrades> U gory mozesz rowniez zobaczyc pogode. Wplynie to na bezpieczenstwo ladowania samolotow.
+
+Mozesz kliknac pas startowy, aby go ulepszyc i dodac urzadzenia, aby byly bezpieczniejsze. Dzieki temu samoloty moga ladowac w trudniejszych warunkach. </WeatherAndUpgrades>
+        <FinanceHubTitle> Zostac przyszlosciowym sukcesem </FinanceHubTitle>
+        <FinanceHub> Co wazniejsze, musimy osiagac zyski. Centrum finansow prowadzi rozne operacje, w tym zaciaganie pozyczek, co jest przydatne, jesli masz malo gotowki.
+
+Aby uzyskac szybki przeglad, mozesz rowniez najechac kursorem na saldo u gory ekranu, aby uzyskac krotki przeglad. </FinanceHub>
+        <Research> Niestety, niektore operacje sa zablokowane. Zwykle potrzebny jest specjalistyczny personel lub badania. Jak zwykle najedz kursorem na problem, aby zobaczyc, co jest wymagane.
+
+Jesli brakuje Ci czlonka personelu, ktorego nie mozesz zatrudnic, sprawdz ekran Badania. Byc moze trzeba bedzie je najpierw odblokowac. sledzenie badan jest wazne dla zachowania konkurencyjnosci. </Research>
+        <CommercialOperations> Wazne dla Twojego salda sa rowniez ceny.
+            
+Na ekranie Operacje komercyjne (KeyboardFunctions.OpsControlPanel) mozesz dostosowac naliczane ceny. Pamietaj: niskie ceny zwiekszaja zadowolenie linii lotniczych, ale wysokie ceny zwiekszaja zyski kosztem satysfakcji! </CommercialOperations>
+        <FinaleTitle> Podstawy </FinaleTitle>
+        <Finale> To sa podstawy prowadzenia lotniska. Zapraszam do rozbudowy tego lotniska lub wyprobuj nowe lotnisko!
+            
+Zaleca sie wyprobowanie gry na domyslnym lotnisku poczatkowym lub ukonczenie innych samouczkow przed utworzeniem lotniska od podstaw. </Finale>
+    </EasyTutorial1>
+    <Expansion>
+        <IntroductionTitle> Duza rozbudowa lotniska </IntroductionTitle>
+        <Introduction> Witamy w drugim samouczku na latwym poziomie trudnosci.
+
+Podrozowanie na duzych, zlozonych lotniskach moze byc trudne dla pasazerow. Moze to spowodowac, ze sie spoznia, co obnizy Twoje oceny. </Introduction>
+        <SolutionsTitle> Rozwiazania zwiekszajace wydajnosc </SolutionsTitle>
+        <Solutions> Rozwiazanie 1: Zarzadzaj kolejkami.
+
+Rozwiazanie 2: Zbuduj drugi terminal.
+
+Rozwiazanie 3: Umiesc ruchome chodniki w dlugich terminalach, aby ulatwic pasazerom poruszanie sie.
+
+Rozwiazanie 4: Buduj na wielu pietrach, aby zachowac krotkie odleglosci. </Solutions>
+        <Tip1Title> Rozwiazanie 1: Zarzadzanie kolejkami </Tip1Title>
+        <Tip1> Mozesz przypisac te kolej kolejke do wielu uslug, na przyklad jedna kolejke do trzech kas biletowych. Jest to optymalny sposob, aby ulepszyc sie, ze wszyscy oczekujacy pasazerowie sa wersani w kolejnosci, w jakiej przybyli. </Tip1>
+        <Tip2> Czasami uczciwy porzadek nie jest najbardziej efektywny!
+
+Stworzenie osobnej kolejki dla zalogi lotniczej pozwoli im ominac kolejke glowna, co jest szczegolnie przydatne przy ochronie. Spoznienie zalogi na samolot powoduje opoznienia. </Tip2>
+        <Tip3> Mozesz rowniez rozwazyc ustawianie kolejek priorytetowych dla pierwszej klasy, poniewaz ich zadowolenie wplywa na ocene Twojego lotniska znacznie bardziej niz na zadowolenie trenerow.
+
+Nie pomijaj tworzenia kolejek! Pracownicy sa zdezorientowani, kto bedzie nastepny serwowac, gdy wszyscy sie tlocza, co powoduje, ze sa znacznie wolniejsi. </Tip3>
+        <SecondTerminalTitle> Rozwiazanie 2: Wiele terminali </SecondTerminalTitle>
+        <SecondTerminal> Wiele terminali:
+
+Jesli jest wystarczajaco duzo miejsca i masz wystarczajaco duzy budzet, drugi terminal bylby swietny do poprawy wydajnosci lotniska. Pozwala to na rozdzielenie bramek samolotow miedzy wiele stref bezpieczenstwa i stref biletowych, o ile sa one polaczone! </SecondTerminal>
+        <SecondTerminalProblems> Bedzie to wymagalo znacznie wiekszej infrastruktury do prawidlowego dzialania. Zrob to tylko wtedy, gdy jestes pewien, jak uruchomic pierwszy terminal.
+
+Wskazowka: mozesz zaladowac domyslna mape i skopiowac ja pod nia, aby pocwiczyc tworzenie takiej mapy! Upewnij sie, ze obiekty operacyjne sa poprawnie przypisane. </SecondTerminalProblems>
+        <WalwayIntroTitle> Rozwiazanie 3: Ruchome chodniki </WalwayIntroTitle>
+        <WalkwayIntro> Budowanie chodnikow wzdluz bardzo dlugich obszarow terminala to najlatwiejszy i najtanszy sposob na poprawe wydajnosci. Zaklada sie, ze masz szerokie korytarze, aby je sciagnac.
+
+Moga byc rowniez uzywane przez personel i wozki bagazowe! Poniewaz kazdy jedzie w jednym kierunku, zastanow sie, jak beda je wykorzystywac pasazerowie. Nie buduj wielkich i pozostaw luki, aby ludzie mogli z nich wyjsc. </WalkwayIntro>
+        <WalkwayTips> Pamietaj tylko, ze duze odleglosci piesze to nie jedyny powod spozniania sie pasazerow. Pamietaj, aby zbadac dlugie kolejki i miejsca, w ktorych ludzie zwalniaja.
+
+Jak wyjasniono w samouczku 1, tworzenie niestandardowych kolejek umozliwia wizualna identyfikacje problemow z ruchem drogowym. </WalkwayTips>
+        <WalkwayTask> Zalecany obszar zostal pokazany jako przyklad, przechodzac od ochrony do hali odlotow. Jest to zalecane, poniewaz pasazerowie musza szybko dostac sie na swoje loty.
+
+Aby je zbudowac, wyszukaj „Walkway” w pasku wyszukiwania menu budowania, a nastepnie po prostu przeciagnij w kierunku, w ktorym chcesz, aby zostal wbudowany. </WalkwayTask>
+        <WalkwayTaskObjective> Zbuduj chodnik, wsparcie w zalecanym obszarze. </WalkwayTaskObjective>
+        <FloorsIntroTitle> Rozwiazanie 4: Wiele pieter </FloorsIntroTitle>
+        <FloorsIntro> Wiele pieter:
+            
+Dopasowanie do chodnikow moze nie byc praktyczne, jesli w korytarzu jest malo miejsca.
+
+W zaleznosci od ukladu lotniska, moze nie byc innego wyjscia, jak tylko rozszerzyc sie w gore. Tutaj pojawia sie wiele pieter. </FloorsIntro>
+        <Controls> Uzyj KeyboardFunctions.LevelUp, aby wejsc na pietro, i KeyboardFunctions.LevelDown, aby zejsc na dol. Lub kliknij strzalki po prawej stronie ekranu. Jest to zgodne z amerykanskim systemem: po parterze nie ma pierwszego pietra.
+
+Wszystko, co mozesz zrobic na parterze, mozesz zrobic na innych pietrach (z wyjatkiem zmian terenu). </Controls>
+        <Underground> Obszary podziemne sa przydatne do ukrywania przed pasazerami pozniejszych skomplikowanych systemow, takich jak przenosniki bagazu i media. Nadal potrzebujesz fundamentu pod miejscem, w ktorym umieszczasz przedmioty.
+
+Moga byc rowniez przydatne do laczenia roznych obszarow, takich jak wyspa terminalowa, przez tunele. Mozesz polaczyc dlugi tunel z ruchomymi chodnikami! </Underground>
+        <AboveGround> Wyzsze poziomy moga byc przydatne do powiekszania obszarow handlowych w hali odlotow lub dodawania stref dla personelu, ktore sa z dala od pasazerow.
+
+W przypadku wiekszych bramek do podlaczenia do terminala wymagane jest polaczenie drzwiowe na drugim pietrze. </AboveGround>
+        <SecondFloorOptionalTask> Mozesz swobodnie zbudowac drugie pietro nad hala odlotow, aby zrobic miejsce na sklepy. Pamietaj, aby polaczyc go ze schodami!
+
+Zanim cokolwiek bedzie mozna zbudowac na tej podlodze, nalezy polozyc fundament. Fundament ten nalezy umiescic nad istniejacym na nizszym pietrze. </SecondFloorOptionalTask>
+    </Expansion>
+    <Baggage>
+        <IntroductionTitle> Systemy bagazowe </IntroductionTitle>
+        <Introduction> Witamy w pierwszym zaawansowanym samouczku.
+            
+Systemy bagazowe sa niezbedne na duzych lotniskach. Pozwoli to na sprawny zaladunek i rozladunek bagazu lotniczego oraz szybka dostawe do Odbioru Bagazu. </Introduction>
+        <SmallAirports> Pamietaj, ze jesli prowadzisz male lotnisko, nie potrzebujesz pelnego systemu bagazowego. Do obslugi bagazu potrzebne sa tylko kasy biletowe, strefa odbioru bagazu i dodatkowych pracownikow.
+
+Ci pracownicy beda prowadzic wozki bagazowe miedzy strefami i bramkami, aby nadazyc za popytem, ​​a to bedzie dzialac dobrze na malych lotniskach. </SmallAirports>
+        <SystemIntroTitle> Korzystanie z wielu pieter </SystemIntroTitle>
+        <SystemIntro> Zanim zaczniesz budowac system bagazowy, musisz najpierw przyzwyczaic sie do korzystania z wielu pieter, jak pierwsze w samouczku Large Airport Expansion. Pokrotce omowimy tutaj. </SystemIntro>
+        <MultipleFloors> Uzyj KeyboardFunctions.LevelUp, aby wejsc na pietro, i KeyboardFunctions.LevelDown, aby zejsc na dol. Lub kliknij strzalki po prawej stronie ekranu. Jest to zgodne z amerykanskim systemem: po parterze nie ma pierwszego pietra.
+
+Wszystko, co mozesz zrobic na parterze, mozesz zrobic na innych pietrach (z wyjatkiem zmian terenu). </MultipleFloors>
+        <UndergroundFoundation> Jak widac, podziemne fundamenty zostaly juz zbudowane.
+
+Robiac to dla wlasnych lotnisk, potrzebujesz wystarczajaco duzo miejsca na rampy, przenosniki tasmowe i wezly bagazowe. </UndergroundFoundation>
+        <ConveyorRampTitle> Krok 1: Bilety do samolotow </ConveyorRampTitle>
+        <ConveyorRamp> Potrzebujemy bagazu, aby dostac sie z kas biletowych do samolotow.
+
+Rampa przenosnika bedzie dostarczac bagaz miedzy pietrami.
+
+W menu budowania przejdz do zakladki Narzedzia dla kazdego obiektu zwiazanego z bagazem (i nie tylko). </ConveyorRamp>
+        <ConveyorRampObjective>Umiesc przejscie przenosnika w dol na parterze w podswietlonym miejscu. Jesli nie mozna go umiescic, obracaj go dalej na pokazanym obszarze, a powinien zmienic kolor na zielony.</ConveyorRampObjective>
+<DeskToRamp> Teraz musimy podlaczyc biurka do tej rampy. Kierunek jest automatyczny, wiec nie ma znaczenia, w ktora strone je przeciagniesz.
+        
+Uwaga: jesli chcesz dowolnie umieszczac rzeczy, umiesc je w dowolnym miejscu i przeskocz do przodu w dowolnym momencie. Jesli zdecydujesz sie pominac, pamietaj, ze bedziesz musial sam wymyslic, jak je polaczyc! </DeskToRamp>
+        <DeskToRampObjective> Polacz biurka z rampa za pomoca przenosnikow tasmowych na podswietlonej linii. Musial poczekac, az zostanie zbudowany - pamietaj o sterowaniu telefonu w miejscu w rogu! </DeskToRampObjective>
+        <HubTitle> Sortowanie przechowalni </HubTitle>
+        <Hub> Bagaz nalezy posortowac. Centrum bagazowe przyjmuje dane wejsciowe i sortuje je na wyjscia. Mozesz go obrocic, klikajac srodkowym przyciskiem myszy lub naciskajac klawisze KeyboardFunctions.RotateObject.
+
+Zwroc uwage, gdzie znajduja sie wejscia i wyjscia z koncentratora, na podstawie strzalek wskazujacych do srodka i na zewnatrz koncentratora. Mozesz kliknac dowolny prawym przyciskiem myszy, aby zmienic ich typ! </Hub>
+        <HubObjective> Zbuduj wezel bagazowy i podlacz go. </HubObjective>
+        <DepotTitle> Konczacy krok 1: Wnoszenie biletow na samoloty </DepotTitle>
+        <Depot> Po posortowaniu przechowalni nalezy przejsc do przechowalni przechowalni w poblizu bramek samolotu. Stad bedzie zbierane do samolotow. </Depot>
+        <DepotObjective> Zbuduj sklad przechowalnia na parterze w zaznaczonym miejscu. </DepotObjective>
+        <HubToDepot> Wyjscie z huba bagazowego musi byc polaczone z polaczeniem z polaczeniem do hali bagazowej. </HubToDepot>
+        <HubToDepotObjective> Polacz magazyn z piasta na podswietlonych kwadratach jako przewodnik. </HubToDepotObjective>
+        <CheckDepotWorks> Aby sprawdzic poprawnosc polaczen, najedz kursorem na magazyn. Nie powinno juz wymagac polaczenia z kasa biletowa.
+        
+Dostarcza bagaz tylko do bramek przypisanych do zajezdni. Mozna to wykorzystac, gdy masz duze lotniska z wieloma skladami. </CheckDepotWorks>
+        <CheckDepotWorksObjective> Teraz kliknij magazyn i przypisz go do samolotu. </CheckDepotWorksObjective>
+        <DepotToPlane> Bagaz nie bedzie jeszcze mogl dostac sie do samolotow! Samochody bagazowe dostarcza bagaz do iz magazynow. Sa przechowywane w hangarach.
+
+Mozesz wyszukac „Hangar” w menu budowania lub znalezc go pod strukturami. </DepotToPlane>
+        <DepotToPlaneObjective> Zbuduj maly hangar w miejscu miejscu obok drogi kolowania, a po zbudowaniu dodaj samochod bagazowy. </DepotToPlaneObjective>
+        <DepartureWorks> Samochod bagazowy dostarczy bagaz miedzy depota a wyznaczonymi bramkami.
+
+To jest uporzadkowane loty odlotow, ale teraz musimy uporzadkowac bagaz przylotow. </DepartureWorks>
+        <DepotToHubTitle>Krok 2: od samolotow do karuzeli</DepotToHubTitle>
+        <DepotToHub>Po pierwsze, zabierzmy bagaz przylotow z przechowalni do centrum.</DepotToHub>
+        <DepotToHubObjective>Podlaczyc przenosniki tasmowe tak, aby dopasowac wyjscie zajezdni do pozostalego wejscia piasty.</DepotToHubObjective>
+        <Arrivals>Now passengers need a way to actually collect their luggage.
+
+They collect these from baggage carousels, which need to be connected underground. It already comes with a ramp in the middle of it.</Arrivals>
+        <ArrivalsObjective>W strefie odbioru bagazu dodaj karuzele, ktora znajduje sie w Utilities.</ArrivalsObjective>
+        <HubToCarousel>Wreszcie bagaz musi dostac sie z piasty do karuzeli!</HubToCarousel>
+        <HubToCarouselObjective>Podlacz pozostale z piasty do wejscia karuzeli.</HubToCarouselObjective>
+        <FinaleTitle>System bagazu roboczego</FinaleTitle>
+        <Finale>Gratulacje, (zakladajac, ze nie pominales) masz dzialajacy system bagazu!</Finale>
+    </Baggage>
+    <FuelPA>
+<IntroductionTitle> Systemy PA i paliwo </IntroductionTitle>
+        <Introduction> Witamy w drugim zaawansowanym samouczku. Ten samouczek pomoze usprawnic dzialanie duzych lotnisk.
+
+Systemy PA pomagaja zatrzymac pasazerow i zaloge lotnicza spozniajaca sie na loty, a uslugi paliwowe zwieksza zainteresowanie linii lotniczych! </Introduction>
+        <PAInfoTitle> Ogloszenia publiczne </PAInfoTitle>
+        <PAInfo> Po pierwsze, uruchommy system PA. Nie tracmy wysokich ocen zdezorientowanych pasazerow.
+            
+System PA jest uruchamiany dwukrotnie podczas procesu wejscia na poklad. Najpierw, gdy samolot zaczyna wchodzic na poklad. Nastepnie nadaje „ostatnie polaczenie” okolo 15-20 minut przed odlotem. </PAInfo>
+        <TechnologyTitle> Odblokowanie PA </TechnologyTitle>
+        <Technology> Musisz zbadac technologie, aby moc zatrudnic CTO (Chief Technology Officer) i odblokowac systemy PA.
+
+Czekajac na badania, mozesz zbudowac biuro dla przyszlego CTO. Podczas samouczka badania sa znacznie szybsze niz zwykle! </Technology>
+        <TechnologyObjective> Technologia badawcza na ekranie badan. </TechnologyObjective>
+        <CTO> Gdy bedziesz miec CTO i biuro, bedziesz mogl odblokowac systemy PA. </CTO>
+        <CTOObjective> Zatrudnij CTO i ciag sie, ze ma biuro. </CTOObjective>
+        <SpeakersTitle> Budowa systemu PA </SpeakersTitle>
+        <Speakers> Glosniki przekazuja komunikaty przez terminal. Pasazerowie musza znajdowac sie blisko mowiacego i skierowac sie w jego strone, aby go uslyszec.
+        
+Umieszczajac je, uzyj mapy cieplnej glosnikow PA, aby zobaczyc obszar, na ktory one wplywaja. </Speakers>
+        <SpeakersObjective> Przeglad co najmniej 4 glosniki w miejscach, ktore sa odwiedzane przez przegladane przez pliki. Skorzystaj z mapy cieplnej Glosnikow PA, aby zobaczyc zasieg. </SpeakersObjective>
+        <Amplifier> Systemy PA wykorzystuja wzmacniacze do podlaczenia glosnikow do centralnego systemu elektrycznego.
+
+Jesli masz wiecej niz 4 glosniki lub wiecej niz 4 bramki, zbuduj wzmacniacz HD, aby poradzic sobie z dodatkowym obciazeniem. </Amplifier>
+        <AmplifierObjective> Przeciagnij pomieszczenie ze strefa elektryczna i umiesc w nim wzmacniacz. Albo sie, ze wymagania. </AmplifierObjective>
+        <Connect> Udaj probe kazdego glosnika, wzmacniacz, wzmacniacz i zrozumienie z. </Connect>
+        <CompletedPATitle> Uslugi paliwowe </CompletedPATitle>
+        <CompletedPA> Twoj system PA powinien teraz dzialac!
+
+Nastepnie przyjrzymy sie uslugom paliwowym.
+
+Tankowanie samolotow pomaga Twojemu lotnisku uzyskac dodatkowe dochody, poprawic oceny zadowolenia linii lotniczych i potencjalnie uzyskac dostep do nowych kontraktow. </CompletedPA>
+        <FuelDepotTitle> Zdobywanie paliwa </FuelDepotTitle>
+        <FuelDepot>Paliwo dostarczane jest raz dziennie do zajezdni, gdzie samochody dostawcze beda dostarczac nowe paliwo spoza lotniska.</FuelDepot>
+        <FuelDepotObjective>Zbuduj sklad paliw przy glownej drodze.</FuelDepotObjective>
+<FuelTanks> Paliwo jest przechowywane w zbiornikach paliwa. Dostepne sa duze zbiorniki paliwa, ale sa one bardzo drogie. Musza byc podlaczone do magazynu i mozesz zaoszczedzic na rurociagach, budujac je blisko.
+
+Mozesz zobaczyc, ktore rury maja paliwo, jesli sa czerwone (puste) lub zielone (pelne / podlaczone do magazynu). </FuelTanks>
+        <FuelTanksObjective> Zbuduj przynajmniej dwa zwykle zbiorniki paliwa i podlacz je do bazy. </FuelTanksObjective>
+        <RefuelingStationTitle> Od magazynu do samolotow </RefuelingStationTitle>
+        <RefuelingStation> Ciezarowki beda jechac wzdluz drogi kolowania do stacji benzynowej, aby zatankowac. </RefuelingStation>
+        <RefuelingStationObjective> Zbuduj stacje paliw obok drogi kolowania i polacz ja z reszta sieci paliwowej za pomoca rur. </RefuelingStationObjective>
+        <Transport> Czas kupic ciezarowki, ktore wykonaja robote. Najpierw musisz zbudowac hangar i kupic zakupke z menu hangaru. </Transport>
+        <TransportObjective> Kup przynajmniej jedna czesc z paliwem. </TransportObjective>
+        <BuyFuelTitle> Biznes zwiazany z paliwem </BuyFuelTitle>
+        <BuyFuel> Przejdz do operacji i kliknij Uslugi paliwowe. Mozesz kupic i sprzedac paliwo. Jesli obserwujesz cene rynkowa i jestes wystarczajaco sprytny, mozesz zarabiac na paliwie! </BuyFuel>
+        <BuyFuelObjective> Kup co najmniej 10000 paliwa. Mozesz kupic raz lub ustawic automatyczne kupowanie codziennie. </BuyFuelObjective>
+        <Active> Jesli okaze sie, ze stan uslug paliwowych to „Nieaktywne”, sprobuj najechac na niego kursorem, aby zobaczyc, jakie sa problemy.
+
+Bedziesz musial ustawic schemat cen. Wyprobuj kazdy ponizej kazdego z nich znajduja sie informacje, ktore pomoga Ci wybrac lepsza metode wyceny. </Active>
+        <MoreInfo> Przewin w dol okno uslug paliwowych, aby zobaczyc wiecej informacji.
+
+W przyszlosci mozesz chciec ulepszyc bramki swoich samolotow, aby miec porty paliwowe, ktore beda wydajniej dostarczac paliwo do twoich samolotow. </MoreInfo>
+        <FinaleTitle> Systemy robocze! </FinaleTitle>
+        <Finale> Masz teraz dzialajace systemy naglosnienia i paliwa! </Finale>
+    </FuelPA>
+    <Scheduling>
+        <IntroductionTitle> Samouczek planowania pracownikow </IntroductionTitle>
+        <Introduction> Witamy w samouczku dotyczacym planowania pracownikow!
+        
+Tutaj dowiesz sie, jak przypisac zaplanowane czasy dzialania dla obiektow i stref. Jest to przydatne, poniewaz pozwala obnizyc koszty pracownikow w okresach ciszy lub zwiekszyc liczbe pracownikow w okresach wzmozonego ruchu. </Introduction>
+        <HowItWorksTitle> Jak to dziala </HowItWorksTitle>
+        <HowItWorks> Istnieje os czasu dla dziennego rozkladu calego lotniska (do tego dojdziemy pozniej). Jest podzielony na zmiany, a do kazdej zmiany mozna zastosowac inne ustawienia.
+        
+Te ustawienia umozliwiaja zmiane liczby pracownikow, ktorzy beda zarzadzac kazda strefa lub obiektem. Jak pokazano na obrazku po prawej stronie, w czasie ciszy mozesz zwolnic polowe swoich ochroniarzy. Mozna to ustawic miedzy 2 w nocy a 4 w nocy, po czym nastapi zmiana z oboma straznikami miedzy 4 rano a 8 rano. </HowItWorks>
+        <StaffHubTitle> Kto moze zostac zaplanowany? </StaffHubTitle>
+<StaffHub> Na ekranie Staff Hub mozesz najechac kursorem na kazdego typu pracownika, aby dowiedziec sie, ktorych z nich mozna zaplanowac. Na przyklad ochrona mowi, ze zezwala na harmonogramy, dlatego obiekty, ktore sa obslugiwane przez zabezpieczenia, moga byc planowane jako otwarte o okreslonych porach dnia.
+        
+Zwroc uwage, ze kazdy z nich ma oplate ogolna za zarzadzanie. Kwota ta jest zwiekszana dla kazdego zaplanowanego personelu dziennie, aby pokryc koszty zarzadzania harmonogramami. </StaffHub>
+        <SchedulerTitle> Ekran oczekiwaniaania personelu </SchedulerTitle>
+        <Scheduler> Tutaj mozesz zobaczyc ekran rozmieszczenia personelu. Na calym lotnisku powinny znajdowac sie numery pokazujace liczbe pracownikow przypisanych do kazdego obiektu, ktory umozliwia planowanie.
+        
+U dolu ekranu znajduje sie os czasu pokazujaca zmiany przesuniecia. W tej chwili powinna byc utworzona tylko jedna zmiana. Oznacza to, ze wszelkie ustawienia utworzone dla tej zmiany beda obowiazywac przez caly dzien. </Scheduler>
+        <StaffTypes> Pamietaj, ze sa rozne typy pracownikow. Aby zredagowac zarzadzanie harmonogramami, kazdy typ ma wlasna os czasu. </StaffTypes>
+        <StaffTypesObjective> Uzyj listy rozwijanej, aby zmienic typ pracownika. </StaffTypesObjective>
+        <Timeline> Mozesz dodawacy, a dla kazdego harmonogramu mozesz zmieniac wersje pracownikow na kazdym harmonogramie. </Timeline>
+        <TimelineObjective> Utworz nowy rysunek, scenariusz plusa. Po nadaniu mu nazwy bedziesz mogl go przypisac. </TimelineObjective>
+        <AssigningTimes> Upewnij sie, ze jest zaznaczona (u gory osi czasu jest napisane, ktora jest aktualnie wybrana), a nastepnie kliknij czas rozpoczecia i przeciagnij. Zrywa sie do najblizszych 30 minut.
+
+Przykladem moze byc utworzenie harmonogramu nocnego od polnocy do 4 rano i ponowne przeciagniecie miedzy 22:00 a polnoca. </AssigningTimes>
+        <RemoveRename> Mozesz usunac lub zmienic nazwe harmonogramu, klikajac jedna z opcji obok tytulu edytora harmonogramu.
+        
+Ostatnia opcja jest skopiowanie czasow z innego harmonogramu, co jest przydatne, jesli potrzebujesz tylko wprowadzic niewielkie poprawki do istniejacego.
+
+Ma tylko dwa kroki! Krok 1: kliknij harmonogram, w ktorym chcesz otrzymac zmiany. Krok 2: wybierz kopie z i wybierz harmonogram. </RemoveRename>
+        <AddRemoveStaff> Dzieki konfiguracji harmonogramow mozna kontynuowac dostosowywanie liczby pracownikow w kazdym obiekcie. Na przyklad na dziennej zmianie mozesz miec 1 pracownika przy kasie biletowej, a na nocnej zmianie 0.
+        
+Wiekszosc moze miec maksymalnie 1 pieciolinie (najedz kursorem na kazdy obiekt, aby zobaczyc ograniczenia). Niektore obiekty, takie jak kioski i kuchnie, moga miec wielu pracownikow, aby byly bardziej wydajne. </AddRemoveStaff>
+        <SeeIt> Aby zobaczyc harmonogramy w akcji, pozwol mijac czasowi i obserwuj, jak przychodza i wychodza o roznych porach.
+        
+Aby to sie stalo, bedziesz potrzebowac strefy wysiadania i odbioru, poniewaz pracownicy przyjezdzaja i wyjezdzaja transportem. Im wiecej harmonogramow dodasz, tym lepiej mozesz dostroic koordynacje swoich pracownikow.
+
+Mozesz zobaczyc, ilu pracownikow jest w nastepnym autobusie w Staff Hub. </SeeIt>
+        <EndTitle>Samouczek ukonczony</EndTitle>
+        <End>Mozesz teraz zaplanowac, kiedy obiekty beda obslugiwane przez personel, i uzyskac lepsza kontrole nad lotniskiem.</End>
+    </Scheduling>
+    <FoodStores>
+        <IntroductionTitle>Samouczek dotyczacy jedzenia i zakupow</IntroductionTitle>
+<Introduction> Witamy w samouczku dotyczacym jedzenia i zakupow! Obejmuje to, jak budowac kawiarnie, kuchnie i sklepy i jak pax wybiera, gdzie jesc i robic zakupy.
+
+Moze to byc oplacalne dla Twojego lotniska, a jednoczesnie uszczesliwic pasazerow. </Introduction>
+        <FoodTitle> Jedzenie i napoje </FoodTitle>
+        <Food> Pax zglodnieje i istnieje wiele rodzajow zywnosci, ktore moga w tym pomoc.
+        
+Po pierwsze sa automaty z jedzeniem, ktore zapewniaja najmniej satysfakcji, a nawet moga sprawic, ze Twoi pasazerowie beda troche sfrustrowani! Sa one odpowiednie tylko dla malych lotnisk jednak podstawowa oferta jedzenia jest lepsza niz brak jedzenia! </Food>
+        <Drinks> Pax moze rowniez poczuc pragnienie, automaty z napojami maja taki sam wplyw na spragnione napoje, jak automatyczne z jedzeniem na glod! </Drinks>
+        <KiosksCafes> Kioski i kawiarnie oferuja znacznie lepsze jedzenie i napoje. Maja one znacznie wiekszy wplyw na glod i pragnienie i nie frustruja twojego paxa.
+
+Dostepne sa rozne rodzaje zywnosci i napojow o wyzszej jakosci. Kazdy pasazer przyjezdza z preferowanym jedzeniem i piciem i bedzie jadl lub pil tylko ten typ. Jesli to nie jest dostepne, zamiast tego poszukaja automatu! </KiosksCafes>
+        <FoodTypes> Kazdy kiosk specjalizuje sie w typie jedzenia lub napoju i mozesz najechac kursorem na opcje menu budowy, aby sie dowiedziec! Na przyklad do kiosku z pizza pojda tylko osoby, ktore lubia pizze. W barze sprzedawane sa rozne rodzaje napojow.
+
+Kawiarnia jest wyjatkowa, poniewaz sprzedaje rodzaje zywnosci na podstawie wyswietlaczy i dozownikow, ktore do niej dodasz. Chociaz prawda jest, ze kawiarnia moze serwowac kazdy rodzaj jedzenia i napojow na znacznie mniejszej powierzchni niz kioski, moze to rowniez sprawic, ze bedzie bardzo zajeta. </FoodTypes>
+        <BuildingTitle> Budowanie kioskow i kawiarni </BuildingTitle>
+        <Building> Zbudowanie kiosku dziala tak samo, jak kazdy inny obiekt. Po zbudowaniu musisz musiec isc do kuchni, ktora dziala tak samo, jak kazde inne zadanie w grze, decyzja na nia, spotkanie Przypisz do, a tymczasem plane kuchenna. </Building>
+        <BuildingObjective> Ustaw strefe w kuchni i uruchom ja.
+Zbuduj pizze w terminalu i przypisz ja do strefy kuchennej. </BuildingObjective>
+        <CafeRequirements> Kawiarnie wymagaja najpierw utworzenia strefy Cafe, a nastepnie mozna na nia najechac kursorem, aby zobaczyc wymagania.
+
+Ekspozytory z jedzeniem i automaty do napojow sa miejscem, w ktorym pasazerowie odbieraja niezaplacone jedzenie i napoje, a nastepnie zabieraja je do kasy, aby za nie zaplacic. Nie moga jesc ani pic, dopoki za nie zaplaca! Mozna ustawic stoly i krzesla, przy ktorych moga usiasc tylko pasazerowie, ktorzy kupili przedmioty z tej strefy. </CafeRequirements>
+        <Kitchens1Title> Przygotowanie posilkow i napojow </Kitchens1Title>
+        <Kitchens1> Twoje kioski z napojami i kioski z napojami (kioski z kawa i bary) musza byc uzupelniane przez pracownikow. Dostawy beda dostarczane w skrzynkach zaopatrzeniowych w strefach dostaw, o domyslnej godzinie polnocy. Mozesz to zmienic na ekranie Dostawy w kontrolerze Operations.
+
+Strefy kuchenne sa wymagane do gotowania jedzenia w kioskach i wystawach w kawiarniach. </Kitchens1>
+        <Kitchens2> Ta nie kuchnia jest gotowa do zapotrzebowania! Aby, co jest potrzebne, kliknij zobacz kuchnie i wybierz Przeglad kuchni. Spowoduje do wyswietlenia przegladu przegladu, ktory oferuje, jakie kroki sa potrzebne dla kazdego zamowienia. </Kitchens2>
+        <Kitchens2Objective> Korzystajac z przegladu kuchni, zbuduj kazdy brakujacy obiekt do robienia pizzy do kiosku z pizza. </Kitchens2Objective>
+        <Kitchens3> Polki magazynowe i lodowki zasilania przez zasilania, gwarancja jak napoje i kioski z napojeami. Po zarybieniu szefowie kuchni moga zaczac z nich rozpoczac proces gotowania. </Kitchens3>
+        <ChefsTitle> Szefowie kuchni </ChefsTitle>
+        <Chefs> Konieczne jest zatrudnienie szefow kuchni, ktorzy gotuja i dostarczaja je do kioskow i wystaw. Mozesz uzyc ikony planowania personelu, jak wyjasniono w samouczku planowania pracownikow, aby przydzielic wiecej niz jednego szefa kuchni. Po prostu kliknij strefe kuchenna. </Chefs>
+        <ChefsObjective> Zatrudnij, a nastepnie przypisz co najmniej 3 szefow kuchni do kuchni. </ChefsObjective>
+        <FinishedKitchenTitle>Gotowa kuchnia</FinishedKitchenTitle>
+        <FinishedKitchen>Wroc do przegladu kuchni i uzyj go, aby dodac wiecej rodzajow zywnosci. Bedziesz wtedy mogl obsluzyc wiecej pasazerow w roznych kioskach i wyswietlaczach.</FinishedKitchen>
+        <StoresTitle>Sklepy detaliczne</StoresTitle>
+<Stores> Chociaz zaspokoilismy glod i pragnienie, pasazerowie nadal moga sie nudzic!
+        
+Istnieje wiele prostych stoisk i uslug elektronicznych, ktore mozesz zbudowac, aby zabawiac gosci. Ale dzieki sklepom mozesz osiagnac znacznie wiekszy zysk! </Stores>
+        <BuildingStores> Kazdy sklep wymaga strefy. Wymagaja kasy fiskalnej do obslugi placacych klientow. </BuildingStores>
+        <BuildingStoresObjective> Strefa nowa funkcjonujaca powierzchnia sklepowa. </BuildingStoresObjective>
+        <ProductsTitle> Produkty detaliczne </ProductsTitle>
+        <Products> Istnieje wiele produktow, ktore mozna sprzedawac na roznych wystawach produktow, a ich liste mozna znalezc w podkategorii Handel detaliczny w menu Budowanie.
+        
+Kazdy produkt ma swoja popularnosc i poziom zyskow najedz kursorem na opcje, aby zobaczyc! </Products>
+        <ProductStats> Poziom zysku to koszt odejmowany od przychodow kazdego z nich, podczas gdy popularnosc to szansa, ze ​​ktos go kupi podczas przegladania.
+        
+Pasazer odwiedzi wystawe produktow i jesli bedzie pod wrazeniem tego, co zobaczy, to kupi. W przeciwnym razie przejda na inny ekran, aby miec nowa szanse wyboru. </ProductStats>
+        <Boredom> Za kazdym razem, gdy pasazer przeglada ekran, staje sie mniej znudzony, a nawet nieco mniej sfrustrowany ze wzgledu na uspokajajacy charakter przegladania.
+        
+Nie ma ograniczen co do tego, ile razy moga przegladac, ani nawet limitu tego, ile moga wydac! </Boredom>
+        <CustomizingTitle> Pobieranie sklepow </CustomizingTitle>
+        <Customizing> Mozesz sprzedawac jeden typ produktu w kazdym sklepie lub sprzedawac wiele produktow, to zalezy od Ciebie!
+        
+Mozesz takze dostosowac nazwy sklepow (a takze nazwy kawiarni), klikajac je i wybierajac Zmien nazwe! </Customizing>
+        <StoresFinaleTitle> Ukonczony samouczek </StoresFinaleTitle>
+        <StoresFinale> Mozesz teraz radzic sobie z glodem, pragnieniem i nuda na lotniskach dzieki kawiarniom, kioskom, automatom i sklepom.
+        
+Zrobiles wszystko, aby zarobic wiecej pieniedzy ... To znaczy, wszystko po to, aby pasazerowie byli szczesliwsi. </StoresFinale>
+    </FoodStores>
+    <NeedsNegotiate>
+        <IntroductionTitle> Samouczek ceny sprzedazy i negocjacji </IntroductionTitle>
+        <Introduction> Witamy w samouczku dotyczacym potrzeb linii lotniczych i negocjacji!
+        
+Zalozmy, ze masz dobrze prosperujace lotnisko, z wieloma zadowolonymi pasazerami i mnostwem pieniedzy. Ale jak uszczesliwic swoje linie lotnicze i wycisnac z nich wiecej pieniedzy?
+
+Uwaga: ten samouczek jest dosc zaawansowany, a sekcja negocjacji dotyczy tylko srednich i duzych lotnisk. </Introduction>
+        <AirlinesTitle> Dlaczego linia lotnicza jest wazna? </AirlinesTitle>
+        <Airlines>Linie lotnicze oferuja Ci schematy lotow, ktore mozesz przypisac do swoich bramek w okreslonych ograniczonych czasach i rozmiarach bramek.
+        
+Im bardziej linia lotnicza jest zadowolona z Twojego lotniska, tym wiecej oferuje Ci lotow, na ktorych mozesz zarobic. Dopoki zaspokoisz ich inne potrzeby, bedziesz mogl naliczyc im wyzsze ceny. A ty lubisz pieniadze, prawda?</Airlines>
+        <DifferentNeedsTitle> Rozne obowiazki produkcyjne </DifferentNeedsTitle>
+        <DifferentNeeds> Zaufanie jest ogolnym odzwierciedleniem Twoich relacji z liniami lotniczymi. Leczenie jest powolne, jesli zlamiesz wynegocjowana umowe, masz slaba komunikacje i mozesz miec rowniez wplyw na inne zle potrzeby. Ma to ogromny wplyw na ich ogolne zadowolenie.
+            
+Pozostale potrzeby sa dosc proste i zostaly wyjasnione w widoku Szczegoly linii lotniczej. Sa to: oplaty handlowe, komunikacja, zadowolenie z paliwa, zadowolenie pasazerow i niezawodnosc uslug. </DifferentNeeds>
+        <AirlineRepsTitle> Administratorzy i przedstawiciele handlowi </AirlineRepsTitle>
+        <AirlineReps> Przedstawiciel handlowy skontaktuje sie z linia lotnicza, poprawiajac tym samym potrzebe komunikacji. Moze to miec tylko ograniczony skutek.
+        
+Nie pracujac nad badaniami, Twoi administratorzy moga podwoic sie jako przedstawiciele handlowi, jesli zostana przypisani do linii lotniczej. Jesli nie sa przypisani do zadnej linii lotniczej, wybiora do pomocy losowa linie lotnicza. </AirlineReps>
+        <AirlineRepsObjective> Przejdz do widoku Szczegoly linii lotniczej dla Learnyville Air, kliknij zaznaczla, a nastepnie kliknij Przypisz, aby reprezentowac losowa. </AirlineRepsObjective>
+        <AirlineExecutivesTitle> Kierownictwo linii biznesowych </AirlineExecutivesTitle>
+        <AirlineExecutives> Dyrektorzy linii lotniczych to goscie, ktorzy przybeda z linii lotniczych na spotkania z ich przedstawicielami. Nie maja dostepu do obszarow zablokowanych drzwiami dla personelu.
+        
+Ich satysfakcja wplynie na ogolny wynik zadowolenia pasazerow, podobnie jak zwyklych pasazerow. Upewnij sie, ze obszary, w ktorych przebywaja, sa udekorowane i ze maja dostep do jedzenia, napojow, toalet i rozrywki podczas przerw. </AirlineExecutives>
+        <Reception> Wszyscy odwiedzajacy musza najpierw udac sie do recepcji. Tylko osoby odwiedzajace linie lotnicze moga go przejezdzac, wiec uzyj stref recepcyjnych, aby utworzyc granice, na ktorych regularni pasazerowie maja sie zatrzymywac.
+        
+Jak widac, obszar przy wejsciu do centrum biznesowego zostal podswietlony. To byloby dobre miejsce dla ochrony, aby powstrzymac pasazerow przed dalszymi podrozami! </Reception>
+        <ReceptionObjective> Dodaj funkcjonalna strefe recepcji dla gosci do centrum biznesowego. Zaznaczony obszar jest zalecany. </ReceptionObjective>
+        <OfficesPeek> Pamietaj, ze zwykle musisz zatrudnic dodatkowego ochroniarza do pracy. W tym samouczku znajdziesz juz jedna dodatkowa.
+        
+Powinienes zobaczyc kilka pustych biur w polnocnym centrum biznesowym. Dojdziemy do tego pozniej! Zwroc uwage, ze kazdy przedstawiciel handlowy pracuje we wlasnym biurze w taki sam sposob, jak robia to administratorzy. </OfficesPeek>
+        <MoreReps> Posiadanie wiecej niz jednego przedstawiciela moze przyspieszyc szybkosc komunikacji e-maili.
+        
+Ten efekt jest ograniczony i bedziesz musial odbywac spotkania, aby osiagnac najlepszy poziom komunikacji. Odbywaja sie okolo poludnia w sali konferencyjnej i sa automatycznie planowane przez przedstawicieli. </MoreReps>
+        <MoreRepsObjective> Strefuj i buduj funkcjonujaca sale konferencyjna. Idealnie powinno byc w polnocnej czesci. </MoreRepsObjective>
+        <CommercialPricingTitle> Ceny komercyjne </CommercialPricingTitle>
+        <CommercialPricing> Mozesz ustawic koszty pasow startowych i oplat terminalowych na ekranie Operacje. Wplynie to na zapotrzebowanie linii lotniczej na oplaty, a kazda linia lotnicza bedzie miala na to wlasna wrazliwosc.
+        
+Alternatywa sa negocjacje. Negocjacje pozwalaja nam forsowac wyzsze ceny. W zamian sprzedajemy obiekty i inne obietnice. </CommercialPricing>
+        <RequirementsTitle> Wymagania negocjacyjne </RequirementsTitle>
+        <Requirements> Negocjowane umowy to ... wielka sprawa! Linie lotnicze beda wymagac dobrej wczesniejszej historii z nimi, zanim bedziesz mogl z nimi negocjowac.
+        
+Mozesz najechac kursorem na przycisk Negocjuj, aby dowiedziec sie, czego brakuje. Musisz zaakceptowac przynajmniej niektore loty. </Requirements>
+        <RequirementsObjective> Przejdz do ustawien Learnyville Air, ustal wymagania, a nastepnie rozpocznij negocjacje. </RequirementsObjective>
+        <NegotiationsTitle> negocjacje </NegotiationsTitle>
+        <Negotiations> Z powodu tego, co zwracamy, mozesz naliczac liniom lotniczym wyzsze ceny niz zwykle, bez satysfakcji. Jednak najpierw musisz zrobic dobry interes!
+        
+Na tym ekranie mozesz dodac dodatkowe samoloty i wybrac przedzial czasowy, w ktorym te samoloty maja wyladowac. Jest to przydatne, jesli potrzebujesz lotow o okreslonej wielkosci bramki lub przedziale czasowym. </Negotiations>
+        <NegotiationsObjective> Kliknij Zadzwon, aby rozpoczac! </NegotiationsObjective>
+        <Wants> To jest to! Teraz jestesmy w pierwszej rundzie negocjacji. U gory mozesz zobaczyc aktualny wynik atmosfery, ktory stanie sie goracy, gdy jest duzo, a zimny, gdy linia lotnicza jest mniej zainteresowana.
+        
+Ponizej mozesz zobaczyc, czego oczekuje linia lotnicza w roznych kwestiach. Obok kazdego zyczenia znajduje sie opcja skontrowania oferty poprzez wpisanie wartosci lub uzycie suwaka. Mozesz zlozyc do jednej oferty niepodlegajacej negocjacjom, jesli naprawde potrzebujesz kontroferty do trzymania sie. </Wants>
+        <PricingTitle> Rozne systemy cenowe </PricingTitle>
+        <Pricing> Istnieja cztery opcje dostosowywania cen.
+        
+Kara za naruszenie jest prosta: jesli zlamiesz te umowe, zaplacisz te cene!
+
+W panelu bocznym po prawej stronie znajduje sie zakladka o nazwie Warunki, ktora zawiera informacje o naruszeniu umowy. </Pricing>
+        <Pricing2> Oplaty terminalowe i oplaty za pas startowy zastepuja koszt ustalony w cenach komercyjnych.
+        
+Wreszcie jest dzienna oplata. Mozna to wykorzystac jako dodatkowy koszt na pokrycie oplat administracyjnych. Na przyklad zatrudnienie przedstawicieli handlowych kosztuje okolo 3000 USD dziennie! W przypadku bardzo duzych linii lotniczych moze sie okazac, ze lepiej bedzie placic jedna duza dzienna oplate niz placic za lot i za pasazera. </Pricing2>
+        <AtmosphereTitle> Atmosfera </AtmosphereTitle>
+        <Atmosphere> Poeksperymentujmy. Najpierw sprobuj ochlodzic atmosfere! Zwykle sie tak, gdy usuwasz ceny i podnosisz. </Atmosphere>
+        <AtmosphereObjective> Pogarsz oferte, aby uzyskac zla atmosfere. </AtmosphereObjective>
+        <HotDeal> Teraz podgrzejmy! Tym razem popraw oferte, dodajac udogodnienia i obnizajac ceny.
+        
+Zauwaz, ze w przypadku niektorych obiektow powyzej punktu nie ma to wplywu na wynik. Niektore linie lotnicze mniej dbaja o okreslone udogodnienia i dlaczego chca miec mnostwo tego, co im sie nie podoba? </HotDeal>
+        <HotDealObjective> Podgrzej atmosfere! </HotDealObjective>
+        <BestDeal> Po prawej stronie ekranu znajduja sie trzy zakladki i kontekstowe wyskakujace okienko. Podczas pracy nad konkretnym problemem mozesz zobaczyc wiecej szczegolow na jego temat. Jesli nie zostaniesz najechany kursorem na zaden problem, mozesz zobaczyc podsumowanie biezacej umowy, przejrzec potencjalne warunki naruszenia i uzyskac dodatkowa pomoc.
+        
+Musimy pracowac nad jak najlepsza oferta, ale jak to zrobic? </BestDeal>
+        <BestAtmosphere> Mozesz po prostu wpuscic atmosfere do obszaru Good lub Hot, a nastepnie zaakceptowac oferte. Jednak, chociaz moze to byc szybka okazja, z pewnoscia nie zapewni Ci najlepszej oferty!
+        
+Linie lotnicze czasami ukrywaja swoje prawdziwe uczucia dotyczace umowy i staraja sie nie ujawniac, ile naprawde sa sklonne poswiecic. Aby naprawde znalezc najlepsza atmosfere, trzeba bedzie miec pewnosc, ze linia lotnicza spadnie w dol, uzywajac eksperymentow i cierpliwosci. </BestAtmosphere>
+        <SendOfferTitle> Koniec rundy 1 </SendOfferTitle>
+        <SendOffer> Po znalezieniu dobrego zestawu warunkow, w ktorych mozna pojsc na kompromis, kliknij Wyslij oferte. Skontaktuja sie z relacja, gdy omowia miedzy soba. </SendOffer>
+        <SendOfferObjective> Wyslij im swoja kontroferte! </SendOfferObjective>
+        <OutcomeTitle> Trzy wyniki </OutcomeTitle>
+        <Outcomes> Poczekaj, az czas minie, a otrzymasz jedna z tych odpowiedzi:
+        
+1) Linia lotnicza przyjela Twoja oferte.
+        
+2) Linia lotnicza odrzucila Twoja oferte.
+
+3) Linia lotnicza chciala dalej negocjowac, a teraz przechodzisz do nastepnego etapu negocjacji. </Outcomes>
+        <Overview> Jesli wprost odrzucili Twoja oferte, oznacza to, ze postawiles warunki tak ekstremalne, ze nie mogliby znalezc z niej lepszej oferty!
+            
+Niezaleznie od tego, jak poszlo, zalozmy, ze chca sie rengoatyzowac. Zobaczysz ekran przegladu, jak pokazano w wyskakujacym okienku obrazu. Pozwoli to porownac ich nowe kontroferty z Twoimi i pomoze Ci okreslic przebieg transakcji. Nastepnie mozna przejsc do Rundy 2 i kontynuowac proces negocjacji w normalny sposob, az do jego zakonczenia. </Overview>
+        <EndingTitle> Po negocjacjach </EndingTitle>
+        <Ending> Po zakonczeniu linia lotnicza zacznie zadac udostepnienia jej udogodnien. Bedziesz musial budowac lub strefowac nowe obiekty, jesli ich nie masz!
+        
+W widoku Szczegoly linii lotniczej u dolu mozesz zobaczyc aktualna oferte i jej brak. W sekcji Potrzeby linii lotniczych zobaczysz potrzebne udogodnienia. To bedzie sie pogarszac, im dluzej bedziesz potrzebowac ich wyposazenia! </Ending>
+        <Assigning> Aby przypisac im obiekty, kliknij je i wybierz Przypisz wylacznosc linii lotniczych. W tym miejscu zostana wymienione tylko linie lotnicze, ktorym brakuje obiektow.
+        
+Uwazaj na bramki! Tylko samoloty tej linii moga na nich ladowac! Sprawdz harmonogram lotow, jesli jakiekolwiek samoloty nie moga juz korzystac z tej bramki - zmienia kolor na czerwony. </Assigning>
+        <AssigningObjective> Przypisz wszystkie brakujace obiekty. Uzyj ustawien danych danych linii, aby sprawdzic, czego brakuje. </AssigningObjective>
+        <RoomScores> Powinienes zobaczyc nowa potrzebe o nazwie Jakosc obiektu. Kazda strefa ma przypisana ocene strefy, a kiedy przypiszesz strefe linii lotniczej, wezma one pod uwage, jak dobra jest strefa.
+        
+Mozesz kliknac strefe do negocjacji, aby zobaczyc jej ogolny wynik i podzial wynikow. Obejmuje srodowisko, rozmiar strefy, latwosc dostepu i nie tylko! </RoomScores>
+        <OfficesTitle> Biura </OfficesTitle>
+        <Offices> Byc moze przydzieliles im biura. Beda one uzywane przez dyrektorow linii lotniczych, ktorzy pracuja rano i po poludniu. Oni rowniez maja potrzeby, podobnie jak uzytkownicy sali konferencyjnej, i beda starac sie je uporzadkowac podczas przerw.
+        
+W zwiazku z tym wplyna na ogolna satysfakcje, jesli sa nieszczesliwi! Tutaj potrzebne jest duze centrum biznesowe z wieloma udogodnieniami. Pamietaj, ze mozesz na nich zarobic, korzystajac z pewnych udogodnien! </Offices>
+        <FinishedTitle> Otoz to! </FinishedTitle>
+        <Finished> Dowiedziales sie wiecej o potrzebach linii handlowych, zainteresowan, handlach handlowych, salach konferencyjnych, negocjacjach i negocjowanych zlychach! </Finished>
+    </NeedsNegotiate>
+</Tutorial>
