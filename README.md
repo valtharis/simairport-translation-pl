@@ -25,12 +25,11 @@ Link do pobrania https://github.com/valtharis/simairport-translation-pl/archive/
 Translation replaces English language to Polish.
 
 * Download zip of this repository and exctract.
-* Copy and replace directory ```i18n/en``` with ```[Disk drive letter]:\Program Files (x86)\Steam\SteamApps\common\SimAirport\SimAirport_Data\StreamingAssets\i18n```
+* Copy and replace directory ```i18n/English.json``` with ```[Disk drive letter]:\Program Files (x86)\Steam\SteamApps\common\SimAirport\SimAirport_Data\StreamingAssets\i18n\English.json```
 
 ### Instalacja
 
-Tłumaczenie zamienia jęyk angielski na polski
+Tłumaczenie zamienia język angielski na polski
 
 * Pobierz zip tego repozytorium i wypakuj.
-* Skopiuj i zamień katalog ```i18n/en``` do ```[Litera dysku]:\Program Files (x86)\Steam\SteamApps\common\SimAirport\SimAirport_Data\StreamingAssets\i18n```
-
+* Skopiuj i zamień katalog ```i18n/English.json``` do ```[Litera dysku]:\Program Files (x86)\Steam\SteamApps\common\SimAirport\SimAirport_Data\StreamingAssets\i18n\English.json```
